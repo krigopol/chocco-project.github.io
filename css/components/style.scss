@@ -1,0 +1,150 @@
+//vars
+$containerwidth: 1100px;
+$basefontSize: 18px;
+
+//main colors
+$blue: #61c4d9;
+$darkGreen: #0b4d3c;
+
+//normalize
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
+
+// font
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+@import 'nullstyle';
+
+
+
+
+body {
+  font-family: 'Alegreya Sans';
+}
+
+a {
+  color: #fff;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  background: bottom -50px left 30px no-repeat url(/img/leaf_3.png),
+    bottom -30px right 300px no-repeat url(/img/leaf_2.png),
+    bottom 100px right 10px no-repeat url(/img/leaf_1.png),
+    bottom -30px right 100px no-repeat url(/img/berries_2.png),
+    bottom 30px right 260px no-repeat url(/img/berries_1.png),
+    bottom 70px right 25px no-repeat url(/img/sweets.png),
+    top right no-repeat url(/img/decor.png),
+    $blue;
+  padding: 0 80px 42px 80px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+
+
+  &__logo {}
+
+  &__items {
+    justify-self: center;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__item {
+    display: block;
+    margin: auto 13px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  &__address {
+    display: flex;
+  }
+
+  &__icon {
+    margin: auto 5px;
+  }
+
+  &__phone {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
+
+.logo {}
+
+.main {
+
+  &__header {
+    margin-top: 100px;
+    margin-left: -5px;
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 1px;
+  }
+
+  &__text {
+    margin-top: 8px;
+    margin-left: -5px;
+    font-size: 21px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 0.1px;
+
+  }
+}
+
+.button {
+  display: inline-block;
+  margin-top: 30px;
+  font-size: 19px;
+  line-height: 1.2;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #365a49;
+  width: 156px;
+  height: 58px;
+  border-radius: 28px;
+
+  &:hover {
+    color: #fff;
+    background-color: #365a49;
+
+  }
+}
+
+.advantages {
+  display: flex;
+  margin-top: 69px;
+}
+
+.advantage {
+  display: flex;
+  margin-right: 50px;
+
+  &__pic {}
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+    margin-left: 7px;
+  }
+}
