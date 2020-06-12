@@ -30,13 +30,13 @@ a {
 }
 
 .header {
-  background: bottom -50px left 30px no-repeat url(/img/leaf_3.png),
-    bottom -30px right 300px no-repeat url(/img/leaf_2.png),
-    bottom 100px right 10px no-repeat url(/img/leaf_1.png),
-    bottom -30px right 100px no-repeat url(/img/berries_2.png),
-    bottom 30px right 260px no-repeat url(/img/berries_1.png),
-    bottom 70px right 25px no-repeat url(/img/sweets.png),
-    top right no-repeat url(/img/decor.png),
+  background: bottom -50px left 30px no-repeat url(../img/leaf_3.png),
+    bottom -30px right 300px no-repeat url(../img/leaf_2.png),
+    bottom 100px right 10px no-repeat url(../img/leaf_1.png),
+    bottom -30px right 100px no-repeat url(../img/berries_2.png),
+    bottom 30px right 260px no-repeat url(../img/berries_1.png),
+    bottom 70px right 25px no-repeat url(../img/sweets.png),
+    top right no-repeat url(../img/decor.png),
     $blue;
   padding: 0 80px 42px 80px;
 }
