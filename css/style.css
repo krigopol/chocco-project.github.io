@@ -392,7 +392,7 @@ table {
 }
 
 .advantages-section {
-  background: url("/img/half_leaf_bg.png") left top 54% no-repeat;
+  background: url("../img/half_leaf_bg.png") left top 54% no-repeat;
   position: relative;
 }
 
@@ -404,7 +404,7 @@ table {
 }
 
 .reviews__display {
-  background: url("/img/feedback-decor.png") no-repeat top right, #f8faf9;
+  background: url("../img/feedback-decor.png") no-repeat top right, #f8faf9;
   padding: 50px 45px 34px 50px;
   margin-top: 30px;
   margin-bottom: 25px;
@@ -511,12 +511,12 @@ table {
 }
 
 .reviews-section {
-  background: url("/img/bellyes-fb1.png") right top 10% no-repeat, url("/img/feedback-leaf-decor.png") bottom -10% left no-repeat;
+  background: url("../img/bellyes-fb1.png") right top 10% no-repeat, url("../img/feedback-leaf-decor.png") bottom -10% left no-repeat;
   position: relative;
 }
 
 .reviews-section:before {
-  content: url("/img/bellyes-fb2.png");
+  content: url("../img/bellyes-fb2.png");
   position: absolute;
   left: 0;
   bottom: -15%;

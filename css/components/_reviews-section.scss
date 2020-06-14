@@ -1,11 +1,11 @@
 .reviews-section {
-  background: url("/img/bellyes-fb1.png") right top 10% no-repeat,
+  background: url("../img/bellyes-fb1.png") right top 10% no-repeat,
 
-    url("/img/feedback-leaf-decor.png") bottom -10% left no-repeat;
+    url("../img/feedback-leaf-decor.png") bottom -10% left no-repeat;
   position: relative;
 
   &:before {
-    content: url("/img/bellyes-fb2.png");
+    content: url("../img/bellyes-fb2.png");
     position: absolute;
     left: 0;
     bottom: -15%;
