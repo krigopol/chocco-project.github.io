@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__items {
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  margin-right: 26px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.phone-number {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+
+  &__icon-elem {
+    width: 12px;
+    height: 12px;
+    margin-right: 6px;
+  }
+
+  &__text {}
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #fff;
+
+}

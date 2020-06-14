@@ -1,0 +1,12 @@
+.advantages-section {
+  background: url("/img/half_leaf_bg.png") left top 54% no-repeat;
+
+  position: relative;
+
+  &::before {
+    content: url(/img/corn_berry.png);
+    position: absolute;
+    left: 0;
+    bottom: -2%;
+  }
+}

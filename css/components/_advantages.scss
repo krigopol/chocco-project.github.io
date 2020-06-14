@@ -1,0 +1,31 @@
+.advantages {
+  display: flex;
+  justify-content: space-around;
+
+  &__item {
+    flex: 1;
+    position: relative;
+    padding: 0 3%;
+
+    &::before {
+      content: url(../img/separ.png);
+      position: absolute;
+      top: 30px;
+      right: 0;
+      transform: translate(50%);
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+
+      &::before {
+
+        content: ""
+      }
+    }
+  }
+}

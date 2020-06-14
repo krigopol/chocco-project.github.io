@@ -1,0 +1,12 @@
+.order-section {
+  background: url("../img/berry-order.png") no-repeat bottom 10% left 5%,
+    url("../img/leaf-order.png") no-repeat bottom 10% right 5%,
+    url("../img/sec_delivery_decor.png") no-repeat center center / cover,
+    #d2ddd9;
+
+  &__title {
+    color: $darkGreen;
+    margin-bottom: 60px;
+
+  }
+}

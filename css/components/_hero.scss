@@ -1,0 +1,54 @@
+.hero {
+  background: url(../img/decor.png) right bottom no-repeat, ;
+  background-color: $blue;
+  height: 100vh;
+  min-height: 650px;
+  color: #fff;
+  position: relative;
+
+  &:before {
+    content: url("../img/leaf_3.png");
+    position: absolute;
+    bottom: -40px;
+    left: 2%
+  }
+
+  &::after {
+    content: url("../img/leafs_berry_decor.png");
+    position: absolute;
+    bottom: -40px;
+    right: 1%;
+  }
+
+  &__title-section {
+    width: 46%;
+  }
+
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 24px 0 45px 0;
+    background: url(../img/sweets.png) right center / 50% auto no-repeat,
+  }
+
+  &__main-title {
+    font-size: 48px;
+    text-transform: uppercase;
+    line-height: 1.22;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  &__title-decs {
+    font-size: 21px;
+    margin-bottom: 51px;
+    padding-right: 15%;
+    line-height: 1.2;
+  }
+
+  &__icon-section {}
+}
