@@ -5,6 +5,7 @@
   text-transform: uppercase;
   border-radius: 100px;
   line-height: 1;
+  cursor: pointer;
 
   &--white {
     background: #fff;
@@ -13,6 +14,24 @@
     &:hover {
       color: #fff;
       background: $darkGreen;
+    }
+  }
+
+  &--green {
+    color: #fff;
+    background: $darkGreen;
+
+    &:hover {
+      background: #fff;
+      color: $darkGreen;
+    }
+  }
+
+  &--trnsp {
+    background: none;
+
+    &:hover {
+      color: #fff;
     }
   }
 }

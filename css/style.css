@@ -276,6 +276,7 @@ table {
   text-transform: uppercase;
   border-radius: 100px;
   line-height: 1;
+  cursor: pointer;
 }
 
 .btn--white {
@@ -286,6 +287,24 @@ table {
 .btn--white:hover {
   color: #fff;
   background: #0b4d3c;
+}
+
+.btn--green {
+  color: #fff;
+  background: #0b4d3c;
+}
+
+.btn--green:hover {
+  background: #fff;
+  color: #0b4d3c;
+}
+
+.btn--trnsp {
+  background: none;
+}
+
+.btn--trnsp:hover {
+  color: #fff;
 }
 
 .section {
@@ -528,7 +547,7 @@ table {
 
 .order-section__title {
   color: #0b4d3c;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
 }
 
 .form {
@@ -552,7 +571,7 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 17px;
+  margin-bottom: 10px;
 }
 
 .form__block {
@@ -569,7 +588,7 @@ table {
 .form__title {
   color: #365a49;
   font-weight: bolder;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .form__input {
@@ -590,12 +609,6 @@ table {
   resize: none;
 }
 
-.form__pay-method {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .form__selector {
   border: none;
 }
@@ -609,6 +622,10 @@ table {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+}
+
+.form__btns {
+  margin-top: 40px;
 }
 
 .radio {
@@ -656,4 +673,61 @@ table {
 
 .radio--checkbox .radio__visible::before {
   background: url("../img/tick.png") center center no-repeat;
+}
+
+.section-map {
+  background: url("../img/icons/marker.svg") no-repeat top 22% left 42%/46px 57px, url("../img/icons/marker.svg") no-repeat top 75% left 40%/46px 57px, url("../img/icons/marker.svg") no-repeat top 55% left 71%/46px 57px, url("../img/icons/marker.svg") no-repeat top 30% left 92%/46px 57px, url("../img/map.jpg") no-repeat top left/cover;
+}
+
+.footer {
+  height: 93px;
+}
+
+.footer__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 26px 0;
+}
+
+.footer__office {
+  margin: auto 0;
+}
+
+.footer__address {
+  font-size: 20.9px;
+  line-height: 23px;
+  font-weight: 400;
+}
+
+.footer__phone-number {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #365a49;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social__icon {
+  margin-right: 20px;
+}
+
+.social__icon:last-child {
+  margin-right: 0;
+}
+
+.social__icon-elem {
+  width: 20px;
+  height: 20px;
 }
