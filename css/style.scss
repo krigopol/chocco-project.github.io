@@ -2,6 +2,9 @@
 $containerwidth: 940px;
 $baseFontSize: 18px;
 
+//z-index
+$z-fixed-menu: 100;
+
 //main colors
 $blue: #61c4d9;
 $darkGreen: #0b4d3c;
@@ -33,3 +36,4 @@ $darkGreen: #0b4d3c;
 @import 'components/section-map';
 @import 'components/footer';
 @import 'components/social';
+@import 'components/fixed-menu';

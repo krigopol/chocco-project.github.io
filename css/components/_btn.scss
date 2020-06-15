@@ -1,4 +1,5 @@
 .btn {
+  display: inline-flex;
   font-size: 19px;
   font-weight: bold;
   padding: 18px 35px;
@@ -14,6 +15,7 @@
     &:hover {
       color: #fff;
       background: $darkGreen;
+
     }
   }
 

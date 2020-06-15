@@ -270,6 +270,9 @@ table {
 }
 
 .btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   font-size: 19px;
   font-weight: bold;
   padding: 18px 35px;
@@ -730,4 +733,38 @@ table {
 .social__icon-elem {
   width: 20px;
   height: 20px;
+}
+
+.fixed-menu {
+  position: fixed;
+  top: 20%;
+  right: 3%;
+  z-index: 100;
+}
+
+.fixed-menu__item {
+  margin-bottom: 5px;
+}
+
+.fixed-menu__link {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: block;
+  position: relative;
+}
+
+.fixed-menu__link::before {
+  content: "";
+  width: 42%;
+  height: 42%;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  margin: 28% 28%;
+}
+
+.fixed-menu__item--active .fixed-menu__link {
+  border-color: #fff;
 }
