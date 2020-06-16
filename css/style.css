@@ -55,13 +55,13 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 960px;
+  min-width: 53.33rem;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: 940px;
+  width: 52.22rem;
   margin: 0 auto;
   position: relative;
 }
@@ -129,7 +129,7 @@ table {
   background: url(../img/decor.png) right bottom no-repeat;
   background-color: #61c4d9;
   height: 100vh;
-  min-height: 650px;
+  min-height: 36rem;
   color: #fff;
   position: relative;
 }
@@ -137,14 +137,14 @@ table {
 .hero:before {
   content: url("../img/leaf_3.png");
   position: absolute;
-  bottom: -40px;
+  bottom: -2.22rem;
   left: 2%;
 }
 
 .hero::after {
   content: url("../img/leafs_berry_decor.png");
   position: absolute;
-  bottom: -40px;
+  bottom: -2.22rem;
   right: 1%;
 }
 
@@ -164,22 +164,22 @@ table {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
-  padding: 24px 0 45px 0;
+  padding: 1.33rem 0 2.5rem 0;
   background: url(../img/sweets.png) right center/50% auto no-repeat;
 }
 
 .hero__main-title {
-  font-size: 48px;
+  font-size: 2.66rem;
   text-transform: uppercase;
   line-height: 1.22;
-  letter-spacing: 1px;
+  letter-spacing: 0.06rem;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 0.28rem;
 }
 
 .hero__title-decs {
-  font-size: 21px;
-  margin-bottom: 51px;
+  font-size: 1.17rem;
+  margin-bottom: 2.83rem;
   padding-right: 15%;
   line-height: 1.2;
 }
@@ -206,7 +206,7 @@ table {
 }
 
 .menu__item {
-  margin-right: 26px;
+  margin-right: 1.4444rem;
 }
 
 .menu__item:last-child {
@@ -215,7 +215,7 @@ table {
 
 .phone-number {
   color: #fff;
-  font-size: 24px;
+  font-size: 1.3333rem;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,9 +226,9 @@ table {
 }
 
 .phone-number__icon-elem {
-  width: 12px;
-  height: 12px;
-  margin-right: 6px;
+  width: 0.6667rem;
+  height: 0.6667rem;
+  margin-right: 0.3333rem;
 }
 
 .menu__link {
@@ -243,7 +243,7 @@ table {
 }
 
 .features__item {
-  margin-right: 52px;
+  margin-right: 2.8889rem;
 }
 
 .features__item:last-child {
@@ -257,8 +257,8 @@ table {
 }
 
 .feature__icon {
-  width: 45px;
-  margin-right: 7px;
+  width: 2.5rem;
+  margin-right: 0.3889rem;
 }
 
 .feature__icon img {
@@ -266,18 +266,18 @@ table {
 }
 
 .feature__text {
-  font-size: 16px;
+  font-size: 0.8889rem;
 }
 
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  font-size: 19px;
+  font-size: 1.0556rem;
   font-weight: bold;
-  padding: 18px 35px;
+  padding: 1rem 1.9444rem;
   text-transform: uppercase;
-  border-radius: 100px;
+  border-radius: 5.5556rem;
   line-height: 1;
   cursor: pointer;
 }
@@ -325,9 +325,9 @@ table {
 }
 
 .section-header__title {
-  font-size: 48px;
+  font-size: 2.6667rem;
   font-weight: bolder;
-  margin-bottom: 10px;
+  margin-bottom: 0.5556rem;
   text-align: center;
   color: #000;
   text-transform: uppercase;
@@ -337,7 +337,7 @@ table {
 .section-header__subtitle {
   text-align: center;
   margin: 0 26%;
-  margin-bottom: 52px;
+  margin-bottom: 2.8889rem;
   line-height: 1.2;
 }
 
@@ -360,7 +360,7 @@ table {
 .advantages__item::before {
   content: url(../img/separ.png);
   position: absolute;
-  top: 30px;
+  top: 1.6667rem;
   right: 0;
   -webkit-transform: translate(50%);
           transform: translate(50%);
@@ -384,18 +384,18 @@ table {
 
 .advantage__image-wrapper {
   display: inline-block;
-  width: 126px;
-  height: 126px;
+  width: 7rem;
+  height: 7rem;
   position: relative;
   background: #f3f5f3;
   border-radius: 50%;
   overflow: hidden;
-  margin-bottom: 22px;
+  margin-bottom: 1.2222rem;
 }
 
 .advantage__icon {
-  width: 75px;
-  height: 70px;
+  width: 4.1667rem;
+  height: 3.8889rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -404,9 +404,9 @@ table {
 }
 
 .advantage__title {
-  font-size: 27px;
+  font-size: 1.5rem;
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin-bottom: 1.1111rem;
 }
 
 .advantage__text {
@@ -427,9 +427,9 @@ table {
 
 .reviews__display {
   background: url("../img/feedback-decor.png") no-repeat top right, #f8faf9;
-  padding: 50px 45px 34px 50px;
-  margin-top: 30px;
-  margin-bottom: 25px;
+  padding: 2.7778rem 2.5rem 1.8889rem 2.7778rem;
+  margin-top: 1.6667rem;
+  margin-bottom: 1.3889rem;
   overflow: hidden;
   position: relative;
 }
@@ -438,11 +438,11 @@ table {
   content: "";
   display: block;
   position: absolute;
-  width: 90px;
-  height: 90px;
+  width: 5rem;
+  height: 5rem;
   background-color: white;
   border-radius: 50%;
-  top: -65px;
+  top: -3.6111rem;
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
@@ -455,8 +455,8 @@ table {
 }
 
 .reviews__avatar {
-  width: 254px;
-  height: 260px;
+  width: 14.1111rem;
+  height: 14.4444rem;
 }
 
 .reviews__avatar-img {
@@ -470,20 +470,20 @@ table {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 14px 100px 14px 20px;
+  padding: 0.7778rem 5.5556rem 0.7778rem 1.1111rem;
 }
 
 .reviews__title {
-  font-size: 30px;
+  font-size: 1.6667rem;
   line-height: 1.2;
   font-weight: 700;
-  margin-bottom: 22px;
+  margin-bottom: 1.2222rem;
   color: #000;
 }
 
 .reviews__text {
   line-height: 1.2;
-  margin-bottom: 30px;
+  margin-bottom: 1.6667rem;
 }
 
 .reviews__author {
@@ -502,10 +502,10 @@ table {
 }
 
 .interactive-avatar {
-  width: 80px;
-  height: 80px;
-  padding: 6px;
-  border: 6px solid transparent;
+  width: 4.4444rem;
+  height: 4.4444rem;
+  padding: 0.3333rem;
+  border: 0.3333rem solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
@@ -550,7 +550,7 @@ table {
 
 .order-section__title {
   color: #0b4d3c;
-  margin-bottom: 45px;
+  margin-bottom: 2.5rem;
 }
 
 .form {
@@ -563,7 +563,7 @@ table {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-right: 20px;
+  margin-right: 1.1111rem;
 }
 
 .form__col:last-child {
@@ -574,14 +574,14 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 0.5556rem;
 }
 
 .form__block {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  margin-right: 20px;
+  margin-right: 1.1111rem;
 }
 
 .form__block:last-child {
@@ -591,13 +591,13 @@ table {
 .form__title {
   color: #365a49;
   font-weight: bolder;
-  margin-bottom: 3px;
+  margin-bottom: 0.1667rem;
 }
 
 .form__input {
   width: 100%;
-  padding: 18px;
-  border: solid 3px transparent;
+  padding: 1rem;
+  border: solid 0.1667rem transparent;
 }
 
 .form__input:focus {
@@ -607,8 +607,8 @@ table {
 .form__input--textarea {
   width: 100%;
   height: auto;
-  padding: 18px;
-  height: 180px;
+  padding: 1rem;
+  height: 10rem;
   resize: none;
 }
 
@@ -628,14 +628,14 @@ table {
 }
 
 .form__btns {
-  margin-top: 40px;
+  margin-top: 2.2222rem;
 }
 
 .radio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 20px;
+  margin-right: 1.1111rem;
   cursor: pointer;
 }
 
@@ -648,11 +648,11 @@ table {
 }
 
 .radio__visible {
-  width: 26px;
-  height: 26px;
+  width: 1.4444rem;
+  height: 1.4444rem;
   border-radius: 50%;
   background-color: white;
-  margin-right: 10px;
+  margin-right: 0.5556rem;
   position: relative;
 }
 
@@ -660,8 +660,8 @@ table {
   content: "";
   display: none;
   position: absolute;
-  width: 14px;
-  height: 14px;
+  width: 0.7778rem;
+  height: 0.7778rem;
   background: #0b4d3c;
   border-radius: 50%;
   top: 50%;
@@ -679,11 +679,11 @@ table {
 }
 
 .section-map {
-  background: url("../img/icons/marker.svg") no-repeat top 22% left 42%/46px 57px, url("../img/icons/marker.svg") no-repeat top 75% left 40%/46px 57px, url("../img/icons/marker.svg") no-repeat top 55% left 71%/46px 57px, url("../img/icons/marker.svg") no-repeat top 30% left 92%/46px 57px, url("../img/map.jpg") no-repeat top left/cover;
+  background: url("../img/icons/marker.svg") no-repeat top 22% left 42%/2.5556rem 3.1667rem, url("../img/icons/marker.svg") no-repeat top 75% left 40%/2.5556rem 3.1667rem, url("../img/icons/marker.svg") no-repeat top 55% left 71%/2.5556rem 3.1667rem, url("../img/icons/marker.svg") no-repeat top 30% left 92%/2.5556rem 3.1667rem, url("../img/map.jpg") no-repeat top left/cover;
 }
 
 .footer {
-  height: 93px;
+  height: 5.1667rem;
 }
 
 .footer__section {
@@ -696,7 +696,7 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 26px 0;
+  padding: 1.4444rem 0;
 }
 
 .footer__office {
@@ -704,14 +704,14 @@ table {
 }
 
 .footer__address {
-  font-size: 20.9px;
-  line-height: 23px;
+  font-size: 1.1611rem;
+  line-height: 1.2778rem;
   font-weight: 400;
 }
 
 .footer__phone-number {
-  font-size: 21px;
-  line-height: 30px;
+  font-size: 1.1667rem;
+  line-height: 1.6667rem;
   font-weight: 400;
   color: #365a49;
 }
@@ -723,7 +723,7 @@ table {
 }
 
 .social__icon {
-  margin-right: 20px;
+  margin-right: 1.1111rem;
 }
 
 .social__icon:last-child {
@@ -731,8 +731,8 @@ table {
 }
 
 .social__icon-elem {
-  width: 20px;
-  height: 20px;
+  width: 1.1111rem;
+  height: 1.1111rem;
 }
 
 .fixed-menu {
@@ -743,12 +743,12 @@ table {
 }
 
 .fixed-menu__item {
-  margin-bottom: 5px;
+  margin-bottom: 0.2778rem;
 }
 
 .fixed-menu__link {
-  width: 16px;
-  height: 16px;
+  width: 0.8889rem;
+  height: 0.8889rem;
   border-radius: 50%;
   border: 1px solid transparent;
   display: block;

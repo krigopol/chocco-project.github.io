@@ -3,7 +3,7 @@
 
   &__col {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 1.1111rem;
 
     &:last-child {
       margin-right: 0;
@@ -12,13 +12,13 @@
 
   &__row {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 0.5556rem;
 
   }
 
   &__block {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 1.1111rem;
 
     &:last-child {
       margin-right: 0;
@@ -28,13 +28,13 @@
   &__title {
     color: #365a49;
     font-weight: bolder;
-    margin-bottom: 3px;
+    margin-bottom: 0.1667rem;
   }
 
   &__input {
     width: 100%;
-    padding: 18px;
-    border: solid 3px transparent;
+    padding: 1rem;
+    border: solid 0.1667rem transparent;
 
     &:focus {
       border-color: #dee2bd;
@@ -44,8 +44,8 @@
   &__input--textarea {
     width: 100%;
     height: auto;
-    padding: 18px;
-    height: 180px;
+    padding: 1rem;
+    height: 10rem;
     resize: none;
   }
 
@@ -60,6 +60,6 @@
   }
 
   &__btns {
-    margin-top: 40px;
+    margin-top: 2.2222rem;
   }
 }

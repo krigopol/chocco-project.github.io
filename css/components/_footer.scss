@@ -1,11 +1,10 @@
 .footer {
-  height: 93px;
-
+  height: 5.1667rem;
   &__section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 26px 0;
+    padding: 1.4444rem 0;
   }
 
   &__office {
@@ -13,14 +12,14 @@
   }
 
   &__address {
-    font-size: 20.9px;
-    line-height: 23px;
+    font-size: 1.1611rem;
+    line-height: 1.2778rem;
     font-weight: 400;
   }
 
   &__phone-number {
-    font-size: 21px;
-    line-height: 30px;
+    font-size: 1.1667rem;
+    line-height: 1.6667rem;
     font-weight: 400;
     color: #365a49;
   }
