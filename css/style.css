@@ -419,7 +419,7 @@ table {
 }
 
 .advantages-section::before {
-  content: url(/img/corn_berry.png);
+  content: url("../img/corn_berry.png");
   position: absolute;
   left: 0;
   bottom: -2%;
