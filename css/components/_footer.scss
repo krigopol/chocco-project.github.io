@@ -1,28 +1,48 @@
 .footer {
-  height: 93px;
+  height: rem(93px);
+
+  @include phones {
+    height: rem(170px);
+  }
 
   &__section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 26px 0;
+    padding: rem(26px) 0;
+    @include phones {
+  flex-direction: column;
+  justify-content: center;
+}
   }
+
 
   &__office {
     margin: auto 0;
   }
 
   &__address {
-    font-size: 21px;
-    line-height: 23px;
+    font-size: rem(21px);
+    line-height: rem(23px);
     font-weight: 400;
+
+    @include phones {
+      font-size: rem(24px);
+      margin-bottom: rem(18px);
+    }
   }
 
   &__phone-number {
-    font-size: 21px;
-    line-height: 30px;
+    font-size: rem(21px);
+    line-height: rem(30px);
     font-weight: 400;
     color: #365a49;
+
+    @include phones {
+      justify-content: center;
+      margin-bottom: rem(18px);
+    }
+
   }
 
 }

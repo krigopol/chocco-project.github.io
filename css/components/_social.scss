@@ -2,15 +2,20 @@
   display: flex;
 
   &__icon {
-    margin-right: 20px;
+    margin-right: rem(20px);
 
     &:last-child {
       margin-right: 0;
     }
 
     &-elem {
-      width: 20px;
-      height: 20px;
+      width: rem(20px);
+      height: rem(20px);
+
+      @include phones {
+        width: rem(25px);
+        height: rem(25px);
+      }
     }
   }
 }

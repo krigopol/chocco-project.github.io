@@ -4,9 +4,16 @@
     url("../img/sec_delivery_decor.png") no-repeat center center / cover,
     #d2ddd9;
 
+  @include tablets {
+    background: url("../img/sec_delivery_decor.png") no-repeat center center / cover,
+  }
+
   &__title {
     color: $darkGreen;
-    margin-bottom: 45px;
+    margin-bottom: rem(45px);
 
+    @include phones {
+      margin-bottom: rem(30px);
+    }
   }
 }

@@ -2,6 +2,10 @@
 $containerwidth: 940px;
 $baseFontSize: 18px;
 
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
 //z-index
 $z-fixed-menu: 100;
 
@@ -9,6 +13,9 @@ $z-fixed-menu: 100;
 $blue: #61c4d9;
 $darkGreen: #0b4d3c;
 $testvar: #fff;
+
+//media
+@import "components/media";
 
 //normalize
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css');
@@ -20,6 +27,7 @@ $testvar: #fff;
 //components
 @import 'components/hero';
 @import 'components/header';
+@import 'components/menu';
 @import 'components/features';
 @import 'components/feature';
 @import 'components/btn';
@@ -38,3 +46,4 @@ $testvar: #fff;
 @import 'components/social';
 @import 'components/fixed-menu';
 @import 'components/phone-number';
+@import 'components/hamburger';

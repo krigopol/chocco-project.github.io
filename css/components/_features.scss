@@ -2,7 +2,7 @@
   display: flex;
 
   &__item {
-    margin-right: 52px;
+    margin-right: rem(52px);
 
     &:last-child {
       margin-right: 0;

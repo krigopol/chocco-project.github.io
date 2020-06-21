@@ -2,18 +2,36 @@
   display: flex;
   justify-content: space-around;
 
+  @include phones {
+    flex-direction: column;
+  }
+
   &__item {
     flex: 1;
     position: relative;
     padding: 0 3%;
 
+    @include phones {
+      display: flex;
+      padding: 0 0 rem(25px) 0;
+    }
+
     &::before {
       content: url(../img/separ.png);
       position: absolute;
-      top: 30px;
+      top: rem(50px);
       right: 0;
       transform: translate(50%);
+
+      @include tablets {
+        display: none;
+      }
+
+      @include phones {
+        display: none;
+      }
     }
+
 
     &:first-child {
       padding-left: 0;

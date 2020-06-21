@@ -1,9 +1,22 @@
 .form {
   display: flex;
+  margin: 0;
+
+  @include tablets {
+    flex-direction: column;
+  }
+
+  @include phones {
+    margin: 0;
+  }
 
   &__col {
     flex: 1;
-    margin-right: 20px;
+    margin-right: rem(20px);
+
+    @include tablets {
+      margin-right: 0;
+    }
 
     &:last-child {
       margin-right: 0;
@@ -12,13 +25,21 @@
 
   &__row {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: rem(15px);
+
+    @include tablets {
+      margin-bottom: rem(17px);
+    }
+
+    @include phones {
+      margin-bottom: rem(20px);
+    }
 
   }
 
   &__block {
     flex: 1;
-    margin-right: 20px;
+    margin-right: rem(20px);
 
     &:last-child {
       margin-right: 0;
@@ -28,13 +49,26 @@
   &__title {
     color: #365a49;
     font-weight: bolder;
-    margin-bottom: 31px;
+    margin-bottom: rem(3px);
+
+    @include tablets {
+      margin-bottom: rem(0px);
+    }
+
+    @include phones {
+      font-size: rem(22px);
+    }
   }
 
   &__input {
     width: 100%;
-    padding: 18px;
+    padding: rem(18px);
     border: solid 3px transparent;
+
+    @include tablets {
+      padding: rem(5px);
+    }
+
 
     &:focus {
       border-color: #dee2bd;
@@ -44,22 +78,52 @@
   &__input--textarea {
     width: 100%;
     height: auto;
-    padding: 18px;
-    height: 180px;
+    padding: rem(18px);
+    height: rem(180px);
     resize: none;
+    border: solid 3px transparent;
+
+
+    @include tablets {
+      height: rem(90px);
+      width: 100%;
+    }
+
+    &:focus {
+      border-color: #dee2bd;
+    }
   }
 
-  &__selector {
+  &__payment-selector {
     border: none;
+
+    @include phones {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   &__control {
     display: flex;
     flex-wrap: wrap;
     align-items: stretch;
+    justify-content: flex-start;
+
+    @include phones {
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
   }
 
   &__btns {
-    margin-top: 40px;
+    margin-top: rem(40px);
+
+    @include tablets {
+      display: flex;
+      justify-content: center;
+    }
+
   }
 }

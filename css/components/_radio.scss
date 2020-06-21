@@ -1,6 +1,6 @@
 .radio {
   display: flex;
-  margin-right: 20px;
+  margin-right: rem(20px);
   cursor: pointer;
 
   &__selector {
@@ -14,28 +14,42 @@
   }
 
   &__visible {
-    width: 26px;
-    height: 26px;
+    width: rem(26px);
+    height: rem(26px);
     border-radius: 50%;
     background-color: white;
-    margin-right: 10px;
+    margin-right: rem(10px);
     position: relative;
+
+    @include phones {
+      width: rem(30px);
+      height: rem(30px);
+    }
 
     &::before {
       content: "";
       display: none;
       position: absolute;
-      width: 14px;
-      height: 14px;
+      width: rem(14px);
+      height: rem(14px);
       background: $darkGreen;
       border-radius: 50%;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+
+      @include phones {
+        width: rem(15px);
+        height: rem(15px);
+      }
     }
   }
 
-  &__title {}
+  &__title {
+    @include phones {
+      font-size: rem(22px);
+    }
+  }
 }
 
 .radio--checkbox {
@@ -46,6 +60,11 @@
     &::before {
       background: url("../img/tick.png") center center no-repeat;
     }
+  }
+
+  @include phones {
+    margin: 0 auto;
+    ;
   }
 
 }

@@ -1,9 +1,14 @@
 .feature {
   display: flex;
 
+  @media screen and (max-width: 950px) {
+    margin-bottom: rem(20px);
+  }
+
+
   &__icon {
-    width: 45px;
-    margin-right: 7px;
+    width: rem(45px);
+    margin-right: rem(7px);
 
     img {
       color: #fff
@@ -11,6 +16,6 @@
   }
 
   &__text {
-    font-size: 16px;
+    font-size: rem(16px);
   }
 }

@@ -2,33 +2,58 @@
 
   &__display {
     background: url("../img/feedback-decor.png") no-repeat top right, #f8faf9;
-    padding: 50px 45px 34px 50px;
-    margin-top: 30px;
-    margin-bottom: 25px;
+    padding: rem(50px) rem(45px) rem(34px) rem(50px);
+    margin-top: rem(30px);
+    margin-bottom: rem(25px);
     overflow: hidden;
     position: relative;
+
 
     &::before {
       content: "";
       display: block;
       position: absolute;
-      width: 90px;
-      height: 90px;
+      width: rem(90px);
+      height: rem(90px);
       background-color: white;
       border-radius: 50%;
-      top: -64px;
+      top: rem(-64px);
       left: 50%;
       transform: translate(-50%);
+    }
+
+    @include phones {
+      padding: rem(65px) 5% rem(34px) 5%;
+      margin-bottom: rem(15px);
+      background-position: top 10% right -5%;
     }
   }
 
   &__display-inner {
     display: flex;
+
+    @include tablets {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__avatar {
-    width: 254px;
-    height: 260px;
+    width: rem(254px);
+    height: rem(260px);
+
+    @include tablets {
+      width: rem(130px);
+      height: rem(132px);
+      margin-bottom: rem(15px);
+    }
+
+    @include phones {
+      width: rem(145px);
+      height: rem(150px);
+      margin-bottom: rem(12px);
+    }
   }
 
   &__avatar-img {
@@ -39,26 +64,48 @@
 
   &__content {
     flex: 1;
-    padding: 14px 100px 14px 19px;
+    padding: rem(14px) rem(100px) rem(14px) rem(19px);
+
+    @include tablets {
+      padding-right: rem(14px);
+    }
   }
 
   &__title {
-    font-size: 30px;
+    font-size: rem(37px);
     line-height: 1.2;
     font-weight: 700;
-    margin-bottom: 22px;
+    margin-bottom: rem(22px);
     color: #000;
+
+    @include tablets {
+      text-align: center;
+    }
   }
 
   &__text {
     line-height: 1.2;
-    margin-bottom: 30px;
+    margin-bottom: rem(30px);
+    font-size: rem(22px);
+
+    @include tablets {
+      text-align: center;
+    }
   }
 
   &__author {
     line-height: 1.2;
     font-weight: bold;
     color: #000;
+
+    @include tablets {
+      text-align: center;
+    }
+
+    @include phones {
+      font-size: rem(22px);
+    }
+
   }
 
   &__switcher {

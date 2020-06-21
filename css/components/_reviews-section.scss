@@ -1,6 +1,5 @@
 .reviews-section {
   background: url("../img/bellyes-fb1.png") right top 10% no-repeat,
-
     url("../img/feedback-leaf-decor.png") bottom -10% left no-repeat;
   position: relative;
 
@@ -9,6 +8,18 @@
     position: absolute;
     left: 0;
     bottom: -15%;
+
+    @include phones {
+      left: -9%;
+      bottom: -7%;
+    }
+
+  }
+
+  @include phones {
+    background: url("../img/bellyes-fb1.png") right -10% top 7% / 30% no-repeat,
+      url("../img/feedback-leaf-decor.png") bottom 5% left 0 /15% no-repeat;
+    position: relative;
   }
 
 }

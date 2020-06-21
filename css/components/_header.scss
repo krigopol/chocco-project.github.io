@@ -1,25 +1,16 @@
 .header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-}
 
-.menu__items {
-  display: flex;
-  align-items: center;
-}
-
-.menu__item {
-  margin-right: 26px;
-
-  &:last-child {
-    margin-right: 0;
+  @include tablets {
+    align-items: center;
   }
-}
 
 
-.menu__link {
-  text-decoration: none;
-  color: #fff;
-
+  &__phone-number.phone-number {
+    @include tablets {
+      display: none;
+    }
+  }
 }
