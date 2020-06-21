@@ -1,5 +1,5 @@
 //vars
-$containerwidth: 52.22rem;
+$containerwidth: 940px;
 $baseFontSize: 18px;
 
 //z-index
@@ -37,3 +37,4 @@ $testvar: #fff;
 @import 'components/footer';
 @import 'components/social';
 @import 'components/fixed-menu';
+@import 'components/phone-number';

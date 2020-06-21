@@ -1,6 +1,6 @@
 .radio {
   display: flex;
-  margin-right: 1.1111rem;
+  margin-right: 20px;
   cursor: pointer;
 
   &__selector {
@@ -14,19 +14,19 @@
   }
 
   &__visible {
-    width: 1.4444rem;
-    height: 1.4444rem;
+    width: 26px;
+    height: 26px;
     border-radius: 50%;
     background-color: white;
-    margin-right: 0.5556rem;
+    margin-right: 10px;
     position: relative;
 
     &::before {
       content: "";
       display: none;
       position: absolute;
-      width: 0.7778rem;
-      height: 0.7778rem;
+      width: 14px;
+      height: 14px;
       background: $darkGreen;
       border-radius: 50%;
       top: 50%;

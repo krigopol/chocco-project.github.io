@@ -5,12 +5,12 @@
   z-index: $z-fixed-menu;
 
   &__item {
-    margin-bottom: 0.2778rem;
+    margin-bottom: 5px;
   }
 
   &__link {
-    width: 0.8889rem;
-    height: 0.8889rem;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     border: 1px solid transparent;
     display: block;
@@ -24,9 +24,6 @@
       background: #fff;
       position: absolute;
       margin: 28% 28%;
-      // top: 50%;
-      // left: 50%;
-      // transform: translate(-50%, -50%);
     }
   }
 

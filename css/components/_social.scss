@@ -2,15 +2,15 @@
   display: flex;
 
   &__icon {
-    margin-right: 1.1111rem;
+    margin-right: 20px;
 
     &:last-child {
       margin-right: 0;
     }
 
     &-elem {
-      width: 1.1111rem;
-      height: 1.1111rem;
+      width: 20px;
+      height: 20px;
     }
   }
 }

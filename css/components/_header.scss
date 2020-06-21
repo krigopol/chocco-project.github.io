@@ -10,28 +10,13 @@
 }
 
 .menu__item {
-  margin-right: 1.4444rem;
+  margin-right: 26px;
 
   &:last-child {
     margin-right: 0;
   }
 }
 
-.phone-number {
-  color: #fff;
-  font-size: 1.3333rem;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-
-  &__icon-elem {
-  width: 0.6667rem;
-  height: 0.6667rem;
-  margin-right: 0.3333rem;
-  }
-
-  &__text {}
-}
 
 .menu__link {
   text-decoration: none;
