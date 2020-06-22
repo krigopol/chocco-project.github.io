@@ -58,13 +58,16 @@
     border-radius: 0;
 
     &::before {
+      /* background-image: url("data:image/svg+xml;utf8, <svg class='advantage__icon'>
+<use href='./img/icons/sprite.svg%23tick'></use></svg>"); */
+
       background: url("../img/tick.png") center center no-repeat;
+
     }
   }
 
   @include phones {
     margin: 0 auto;
-    ;
   }
 
 }

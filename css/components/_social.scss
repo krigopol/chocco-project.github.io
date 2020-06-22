@@ -11,6 +11,12 @@
     &-elem {
       width: rem(20px);
       height: rem(20px);
+      fill: #b8b8b8;
+      transition: 0.2s;
+
+      &:hover {
+        fill: #000;
+      }
 
       @include phones {
         width: rem(25px);

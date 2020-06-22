@@ -7,12 +7,10 @@
 
 
   &__icon {
-    width: rem(45px);
+    width: rem(50px);
+    height: rem(45px);
     margin-right: rem(7px);
-
-    img {
-      color: #fff
-    }
+    fill: #c6f7ff;
   }
 
   &__text {

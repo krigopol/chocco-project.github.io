@@ -389,12 +389,10 @@ table {
 }
 
 .feature__icon {
-  width: 2.5rem;
+  width: 2.77778rem;
+  height: 2.5rem;
   margin-right: 0.38889rem;
-}
-
-.feature__icon img {
-  color: #fff;
+  fill: #c6f7ff;
 }
 
 .feature__text {
@@ -589,6 +587,7 @@ table {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  fill: #2e2e2d;
 }
 
 @media screen and (max-width: 480px) {
@@ -868,7 +867,7 @@ table {
 
 @media screen and (max-width: 768px) {
   .order-section {
-    background: url("../img/sec_delivery_decor.png") no-repeat center center/cover;
+    background: url("../img/sec_delivery_decor.png") no-repeat center center/cover, #d2ddd9;
   }
 }
 
@@ -1129,6 +1128,8 @@ table {
 }
 
 .radio--checkbox .radio__visible::before {
+  /* background-image: url("data:image/svg+xml;utf8, <svg class='advantage__icon'>
+<use href='./img/icons/sprite.svg%23tick'></use></svg>"); */
   background: url("../img/tick.png") center center no-repeat;
 }
 
@@ -1227,6 +1228,13 @@ table {
 .social__icon-elem {
   width: 1.11111rem;
   height: 1.11111rem;
+  fill: #b8b8b8;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.social__icon-elem:hover {
+  fill: #000;
 }
 
 @media screen and (max-width: 480px) {
@@ -1292,6 +1300,11 @@ table {
   width: 0.66667rem;
   height: 0.66667rem;
   margin-right: 0.33333rem;
+  fill: #fff;
+}
+
+.phone-number__icon-elem--black {
+  fill: #000;
 }
 
 .phone-number__text--white {
