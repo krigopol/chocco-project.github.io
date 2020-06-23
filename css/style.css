@@ -895,6 +895,8 @@ table {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    max-width: 460px;
+    margin: 0 auto;
   }
 }
 
@@ -1249,6 +1251,18 @@ table {
   top: 20%;
   right: 3%;
   z-index: 100;
+}
+
+@media screen and (max-width: 768px) {
+  .fixed-menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fixed-menu {
+    display: none;
+  }
 }
 
 .fixed-menu__item {
