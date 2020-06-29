@@ -144,41 +144,117 @@
       <section class="section slider">
         <div class="slider__container container">
           <div class="slider__arrow">
-            <svg width="15" class="slider__arrow--left">
+            <svg width="15" class="slider__arrow-left">
               <use href="./img/icons/sprite.svg#arrow"></use>
             </svg>
           </div>
-          <div class="slider__main-content">
-            <div class="slider__image">
-              <img src="./img/slider-1st-img.png" alt="">
-            </div>
-            <div class="slider__desc">
-              <div class="slider__contain">
-                <div class="slider__btn">
-                  <svg width="51" height="51" class="slider__btn--elem">
-                    <use href="./img/icons/sprite.svg#bar"></use>
-                  </svg>
-                  <div class="slider__btn--text">состав</div>
+          <ul class="slider__list">
+            <li class="slider__main-content">
+              <div class="slider__image">
+                <img src="./img/slider-1st-img.png" alt="">
+              </div>
+              <div class="slider__desc">
+                <div class="slider__contain">
+                  <div class="slider__btn">
+                    <svg width="51" height="51" class="slider__btn--elem">
+                      <use href="./img/icons/sprite.svg#bar"></use>
+                    </svg>
+                    <div class="slider__btn--text">состав</div>
+                    <ul class="slider__bar-mix">
+                      <li class="slider__mix-elem">
+                        <div class="slider__mix-col">
+                          <img src="./img/icons/grape.png" width="35" height="35" class="slider__elem-img">
+                          <div class="slider__elem-name">
+                            Виноград
+                          </div>
+                        </div>
+                        <div class="slider__elem-weight">
+                          25 г
+                        </div>
+                      </li>
+                      <li class="slider__mix-elem">
+                        <div class="slider__mix-col">
+                          <img src="./img/icons/nut.png" width="35" height="35" class="slider__elem-img">
+                          <div class="slider__elem-name">
+                            Грецкий орех
+                          </div>
+                        </div>
+                        <div class="slider__elem-weight">
+                          32 г
+                        </div>
+                      </li>
+                      <li class="slider__mix-elem">
+                        <div class="slider__mix-col">
+                          <svg width="35" height="35" fill="#000" class="slider__elem-img">
+                            <use href="./img/icons/sprite.svg#almond"></use>
+                          </svg>
+                          <div class="slider__elem-name">
+                            Кунжутное семя
+                          </div>
+                        </div>
+                        <div class="slider__elem-weight">
+                          20 г
+                        </div>
+                      </li>
+                      <li class="slider__mix-elem">
+                        <div class="slider__mix-col">
+                          <img src="./img/icons/powder.png" width="35" height="35" class="slider__elem-img">
+                          <div class="slider__elem-name">
+                            Сухое молоко
+                          </div>
+                        </div>
+                        <div class="slider__elem-weight">
+                          10 г
+                        </div>
+                      </li>
+                      <li class="slider__mix-elem">
+                        <div class="slider__mix-col">
+                          <img src="./img/icons/apitherapy.png" width="35" height="35" class="slider__elem-img">
+                          <div class="slider__elem-name">
+                            Зам. сахара
+                          </div>
+                        </div>
+                        <div class="slider__elem-weight">
+                          4 г
+                        </div>
+                      </li>
+                      <li class="slider__mix-elem">
+                        <div class="slider__mix-col">
+                          <svg width="35" height="35" fill="#000" class="slider__elem-img">
+                            <use href="./img/icons/sprite.svg#beans"></use>
+                          </svg>
+                          <div class="slider__elem-name">
+                            Какао бобы
+                          </div>
+                        </div>
+                        <div class="slider__elem-weight">
+                          4 г
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="slider__title">Батончик <span> “Гранола
+                    виноград”</span>
+                </div>
+                <div class="slider__text">Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также
+                  входят:
+                  сухое молоко, заменитель сахара и какао бобы.</div>
+                <div class="slider__spec">
+                  <div class="slider__ccal">Калорийность <br> <span>110 ккал</span></div>
+                  <div class="slider__weight">Вес <br> <span>95 грамм</span></div>
+                </div>
+                <div class="slider__order">
+                  <div class="slider__price">140 <svg width="25" height="30" class="slider__proce--elem">
+                      <use href="./img/icons/sprite.svg#rub"></use>
+                    </svg></div>
+                  <div class="slider__order-btn btn btn--green">заказать</div>
                 </div>
               </div>
-              <div class="slider__title">Батончик <span> “Гранола
-                  виноград”</span></div>
-              <div class="slider__text">Гранола из винограда, грецкого ореха и кунжутных семечек. В состав также входят:
-                сухое молоко, заменитель сахара и какао бобы.</div>
-              <div class="slider__spec">
-                <div class="slider__ccal">Калорийность <br> <span>110 ккал</span></div>
-                <div class="slider__weight">Вес <br> <span>95 грамм</span></div>
-              </div>
-              <div class="slider__order">
-                <div class="slider__price">140 <svg width="25" height="30" class="slider__proce--elem">
-                    <use href="./img/icons/sprite.svg#rub"></use>
-                  </svg></div>
-                <div class="slider__order-btn btn btn--green">заказать</div>
-              </div>
-            </div>
-          </div>
+            </li>
+          </ul>
           <div class="slider__arrow">
-            <svg width="15" class="slider__arrow--right">
+            <svg width="15" class="slider__arrow-right">
               <use href="./img/icons/sprite.svg#arrow"></use>
             </svg>
           </div>
@@ -352,7 +428,7 @@
         </div>
       </section>
 
-      <section class="menu-fs__section section">
+      <section class="menu-fs section">
         <div class="menu-fs__close-button">
           <svg class="menu-fs__close-button--icon">
             <use href="./img/icons/sprite.svg#close"></use>
@@ -393,7 +469,7 @@
   <script>
     const menuButton = document.querySelector(".hamburger")
     const closeButton = document.querySelector(".menu-fs__close-button")
-    const fsMenu = document.querySelector(".menu-fs__section")
+    const fsMenu = document.querySelector(".menu-fs")
 
     const showMenu = function () {
       fsMenu.style.display = "flex"

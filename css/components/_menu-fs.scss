@@ -1,19 +1,19 @@
 .menu-fs {
-  &__section {
-    display: none;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100vh;
 
-    &::before {
-      content: "";
-      background-color: rgba(0, 0, 0, 0.9);
-      width: 100%;
-      height: 100%;
-      position: absolute;
-    }
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+
+  &::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
   }
+
 
   &__close-button {
     position: absolute;

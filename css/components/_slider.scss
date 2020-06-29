@@ -9,7 +9,7 @@
     flex: 0 1 auto;
     display: flex;
 
-    &--left {
+    &-left {
       transform: rotate(180deg);
     }
   }
@@ -52,6 +52,10 @@
     }
   }
 
+  &__contain {
+    position: relative;
+  }
+
   &__btn {
     width: rem(90px);
     height: rem(90px);
@@ -62,6 +66,11 @@
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: rem(30px);
+    cursor: pointer;
+
+    &:hover .slider__bar-mix {
+      display: flex;
+    }
 
     @include tablets {
       display: none;
@@ -78,6 +87,43 @@
       text-transform: uppercase;
       color: #ffffff;
     }
+  }
+
+  &__bar-mix {
+    position: absolute;
+    width: 270px;
+    height: 329px;
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translate(180px, 120px);
+    padding: 22px 22px 22px 32px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__mix-elem {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__elem-img {
+    margin-right: 24px;
+  }
+
+  &__elem-name {
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 500;
+  }
+
+  &__elem-weight {
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 500;
+  }
+
+  &__mix-col {
+    display: flex;
   }
 
   &__title {
