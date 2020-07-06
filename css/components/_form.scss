@@ -4,9 +4,8 @@
 
   @include tablets {
     flex-direction: column;
-    max-width: 460px;
+    max-width: rem(460px);
     margin: 0 auto;
-
   }
 
   @include phones {
@@ -37,7 +36,6 @@
     @include phones {
       margin-bottom: rem(20px);
     }
-
   }
 
   &__block {
@@ -72,7 +70,6 @@
       padding: rem(5px);
     }
 
-
     &:focus {
       border-color: #dee2bd;
     }
@@ -85,7 +82,6 @@
     height: rem(180px);
     resize: none;
     border: solid 3px transparent;
-
 
     @include tablets {
       height: rem(90px);
@@ -117,7 +113,6 @@
       justify-content: center;
       align-items: flex-start;
     }
-
   }
 
   &__btns {
@@ -127,6 +122,9 @@
       display: flex;
       justify-content: center;
     }
-
   }
+}
+
+.input-error {
+  border-color: pink;
 }

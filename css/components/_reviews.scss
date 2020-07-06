@@ -29,8 +29,23 @@
     }
   }
 
+  &__display-wrapper {
+    display: flex;
+    min-height: rem(280px);
+  }
+
   &__display-inner {
     display: flex;
+    flex: 0 0 100%;
+    position: absolute;
+    opacity: 0;
+
+    &.active {
+      position: static;
+      opacity: 1;
+      pointer-events: unset;
+    }
+
 
     @include tablets {
       display: flex;

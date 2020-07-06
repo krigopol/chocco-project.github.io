@@ -5,20 +5,50 @@
     justify-content: center;
   }
 
-  &__arrow {
+  &__control {
+    position: absolute;
     flex: 0 1 auto;
     display: flex;
+    background: none;
+    align-items: center;
+    z-index: 1;
+    padding: 0 rem(5px);
+    right: 0;
+    top: 45%;
 
+    &-left {
+      left: 0;
+    }
+  }
+
+  &__arrow {
     &-left {
       transform: rotate(180deg);
     }
   }
 
+  &__window-wrapper {
+
+    /*     overflow: hidden;
+ */
+    .bx-wrapper {
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  &__list {
+    /* display: flex;
+width: 100%;
+padding-left: -100%;
+transition: all 1s; */
+  }
+
   &__main-content {
-    flex: 1 1 auto;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+
 
     @include tablets {
       flex-direction: column;
@@ -32,11 +62,11 @@
 
     @include tablets {
       margin: 0 0 rem(25px) 0;
-      max-width: 370px;
+      max-width: rem(370px);
     }
 
     @include phones {
-      max-width: 330px;
+      max-width: rem(330px);
       margin-bottom: 0;
     }
   }
@@ -91,11 +121,11 @@
 
   &__bar-mix {
     position: absolute;
-    width: 270px;
-    height: 329px;
+    width: rem(270px);
+    height: rem(329px);
     background-color: rgba(255, 255, 255, 0.9);
-    transform: translate(180px, 120px);
-    padding: 22px 22px 22px 32px;
+    transform: translate(rem(180px), rem(120px));
+    padding: rem(22px) rem(22px) rem(22px) rem(32px);
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -107,17 +137,17 @@
   }
 
   &__elem-img {
-    margin-right: 24px;
+    margin-right: rem(24px);
   }
 
   &__elem-name {
-    font-size: 16px;
+    font-size: rem(16px);
     line-height: 2;
     font-weight: 500;
   }
 
   &__elem-weight {
-    font-size: 16px;
+    font-size: rem(16px);
     line-height: 2;
     font-weight: 500;
   }

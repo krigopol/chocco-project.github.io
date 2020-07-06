@@ -1,5 +1,4 @@
 .menu-fs {
-
   display: none;
   position: fixed;
   top: 0;
@@ -7,13 +6,12 @@
   height: 100vh;
 
   &::before {
-    content: "";
+    content: '';
     background-color: rgba(0, 0, 0, 0.9);
     width: 100%;
     height: 100%;
     position: absolute;
   }
-
 
   &__close-button {
     position: absolute;
@@ -37,8 +35,8 @@
   }
 
   &__link {
-    font-size: 36px;
-    line-height: 72px;
+    font-size: rem(36px);
+    line-height: rem(72px);
     font-weight: 400;
     color: #ffffff;
   }
