@@ -70,8 +70,17 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   overflow: hidden;
+}
+
+.main-content {
+  height: 100%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  will-change: transform;
 }
 
 .container {
@@ -2011,4 +2020,112 @@ transition: all 1s; */
   color: #000000;
   text-align: center;
   margin-bottom: 1.11111rem;
+}
+
+.accordeon-horizontal {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/menu-phone_1.jpg) left top/cover no-repeat;
+  position: relative;
+}
+
+.accordeon-horizontal::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+}
+
+.accordeon-horizontal::after {
+  content: "меню";
+  position: absolute;
+  margin: 5.5rem auto auto 4.38889rem;
+  top: 0;
+  font-size: 2.66667rem;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .accordeon-horizontal::after {
+    display: none;
+  }
+}
+
+.accordeon-horizontal__list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.accordeon-horizontal__item {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.accordeon-horizontal__item.active .accordeon__wrap {
+  width: 500px;
+}
+
+.accordeon-horizontal__trigger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.accordeon-horizontal__title {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #ffffff;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.accordeon-horizontal__wrap {
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.accordeon-horizontal__content {
+  padding: 50px 127px 50px 27px;
+  overflow-y: auto;
+  background: rgba(51, 53, 55, 0.93);
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #ffffff;
+  position: relative;
+  height: 100%;
+}
+
+.accordeon-horizontal__close {
+  position: absolute;
+  right: 32px;
+  top: 26px;
+  fill: #ffffff;
+  opacity: 0.3;
 }
