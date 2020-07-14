@@ -76,10 +76,10 @@ body {
 
 .main-content {
   height: 100%;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
   will-change: transform;
 }
 
@@ -152,7 +152,7 @@ table {
 .hero {
   background: url(../img/decor.png) right bottom no-repeat;
   background-color: #61c4d9;
-  height: 100vh;
+  height: 100%;
   min-height: 36rem;
   color: #fff;
   position: relative;
@@ -452,7 +452,7 @@ table {
 }
 
 .section {
-  height: 100vh;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -934,12 +934,6 @@ table {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .form {
-    margin: 0;
-  }
-}
-
 .form__col {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -1181,6 +1175,9 @@ table {
 
 .section-map {
   background: url("../img/map.jpg") no-repeat top left/cover;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
 }
 
 .footer {
@@ -1326,6 +1323,14 @@ table {
   margin: 28% 28%;
 }
 
+.fixed-menu--shadowed .fixed-menu__link::before {
+  background: #000;
+}
+
+.fixed-menu--shadowed .fixed-menu__item--active .fixed-menu__link {
+  border-color: #000;
+}
+
 .fixed-menu__item--active .fixed-menu__link {
   border-color: #fff;
 }
@@ -1431,22 +1436,10 @@ table {
           transform: rotate(180deg);
 }
 
-.slider__window-wrapper {
-  /*     overflow: hidden;
- */
-}
-
 .slider__window-wrapper .bx-wrapper {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-}
-
-.slider__list {
-  /* display: flex;
-width: 100%;
-padding-left: -100%;
-transition: all 1s; */
 }
 
 .slider__main-content {
@@ -1643,6 +1636,12 @@ transition: all 1s; */
   }
 }
 
+@media screen and (max-width: 480px) and (max-width: 480px) {
+  .slider__title span {
+    display: block;
+  }
+}
+
 .slider__text {
   font-size: 1rem;
   line-height: 1.2;
@@ -1662,7 +1661,7 @@ transition: all 1s; */
 
 @media screen and (max-width: 480px) {
   .slider__text {
-    padding: 0;
+    padding: 0 5%;
     font-size: 1.22222rem;
   }
 }

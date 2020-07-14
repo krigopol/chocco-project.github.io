@@ -29,19 +29,10 @@
 
   &__window-wrapper {
 
-    /*     overflow: hidden;
- */
     .bx-wrapper {
       border: none;
       box-shadow: none;
     }
-  }
-
-  &__list {
-    /* display: flex;
-width: 100%;
-padding-left: -100%;
-transition: all 1s; */
   }
 
   &__main-content {
@@ -175,6 +166,10 @@ transition: all 1s; */
 
       span {
         white-space: nowrap;
+
+        @include phones {
+          display: block;
+        }
       }
     }
   }
@@ -194,7 +189,7 @@ transition: all 1s; */
     }
 
     @include phones {
-      padding: 0;
+      padding: 0 5%;
       font-size: rem(22px);
 
     }
